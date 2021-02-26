@@ -47,7 +47,7 @@ const locationSchema = new mongoose.Schema({
         coordinates: [Number]
     },
     openingTimes: [openingTimesSchema],
-    review: [reviewSchema]
+    reviews: [reviewSchema]
 });
 
 locationSchema.index({coords: '2dsphere'});
